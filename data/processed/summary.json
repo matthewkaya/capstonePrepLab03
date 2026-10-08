@@ -1,0 +1,55 @@
+{
+  "source_url": "https://api.open-meteo.com/v1/forecast?latitude=43.65&longitude=-79.38&hourly=temperature_2m,precipitation&past_days=7&forecast_days=0&timezone=America/Toronto",
+  "records_processed": 168,
+  "unique_days": 7,
+  "daily_temperature_summary": {
+    "2026-10-01": {
+      "min_temperature": 17.3,
+      "max_temperature": 21.5,
+      "mean_temperature": 19.08
+    },
+    "2026-10-02": {
+      "min_temperature": 10.3,
+      "max_temperature": 19.4,
+      "mean_temperature": 15.5
+    },
+    "2026-10-03": {
+      "min_temperature": 7.3,
+      "max_temperature": 16.8,
+      "mean_temperature": 11.88
+    },
+    "2026-10-04": {
+      "min_temperature": 10.1,
+      "max_temperature": 20.8,
+      "mean_temperature": 14.64
+    },
+    "2026-10-05": {
+      "min_temperature": 7.2,
+      "max_temperature": 17.0,
+      "mean_temperature": 12.19
+    },
+    "2026-10-06": {
+      "min_temperature": 3.0,
+      "max_temperature": 14.1,
+      "mean_temperature": 9.47
+    },
+    "2026-10-07": {
+      "min_temperature": 13.1,
+      "max_temperature": 22.2,
+      "mean_temperature": 17.02
+    }
+  },
+  "daily_precipitation": {
+    "2026-10-01": 0.0,
+    "2026-10-02": 10.799999999999999,
+    "2026-10-03": 0.0,
+    "2026-10-04": 0.0,
+    "2026-10-05": 0.0,
+    "2026-10-06": 0.0,
+    "2026-10-07": 0.4
+  },
+  "warmest_day": {
+    "date": "2026-10-07",
+    "temperature": 22.2
+  }
+}
