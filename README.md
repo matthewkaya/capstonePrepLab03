@@ -44,17 +44,24 @@ The main files are:
 
 ```text
 main.py
+environment.yml
+requirements.txt
+pyproject.toml
+
 src/weathersummary/
+    __init__.py
     config.py
     models.py
     sources.py
     aggregations.py
     report.py
+
 tests/
     test_models.py
+
 data/
-    raw/
-    processed/
+    raw/.gitkeep
+    processed/summary.json
 ```
 
 ## What moved where
