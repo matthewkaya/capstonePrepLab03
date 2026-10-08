@@ -54,3 +54,32 @@ class PrecipitationAggregation(Aggregation):
             )
 
         return daily_precipitation    
+
+class WarmestDayAggregation(Aggregation):
+    """Finds the day with the highest maximum temperature."""
+
+    def compute(self, records):
+        daily_max_temperatures = {}
+
+        for record in records:
+            date = record.time.split("T")[0]
+            temperature = record.temperature
+
+            if temperature is None:
+                continue
+
+            if (
+                date not in daily_max_temperatures
+                or temperature > daily_max_temperatures[date]
+            ):
+                daily_max_temperatures[date] = temperature
+
+        warmest_day = max(
+            daily_max_temperatures,
+            key=daily_max_temperatures.get
+        )
+
+        return {
+            "date": warmest_day,
+            "temperature": daily_max_temperatures[warmest_day]
+        }    
